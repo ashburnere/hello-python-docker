@@ -3,7 +3,7 @@
 
 Sample of a Python webapp dockerized as decribed in [https://docs.docker.com/get-started/part2/](https://docs.docker.com/get-started/part2/).
 
-The *dockefile* creates an images which is based on python:2.7-slim and runs a simple web app the uses the Flask framework to run. Port 80 is exposed to make the web app available to the world outside this container.
+The *dockefile* creates an images which is based on python:2.7-slim and runs a simple web app the uses the Flask framework to run. Port 80 is exposed to make the web app available to the world outside the container.
 
 The application code is located in the file *app.py*. The dependencies are listed in file *requirements.txt*.
 
