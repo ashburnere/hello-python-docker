@@ -12,13 +12,13 @@ The events like startup and visit count are logged to the file *app.log* inside 
 ## Build the image
 
 To build the image use
-`docker build --tag=hello-python-docker .`
+`docker build --tag=hello-python .`
 
 Use `docker image ls` to see the image in your local repository.
 
 ## Build and run the container
 To run the app in a container in background and make it available at port 4000 at your local machine (e.g. http://localhost:4000/) use
-`docker run -d -p 4000:80 hello-python-docker`.
+`docker run -d -p 4000:80 hello-python`.
 
 Use `docker ps` or `docker ls` or `docker ls -a` to explore the containers in your system.
 Use `docker start <container id>` to start a container.
