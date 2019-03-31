@@ -29,7 +29,9 @@ The image is also published at [https://cloud.docker.com/repository/docker/ashbu
 Use `docker run -d -p 4000:80 ashburnere/hello-python-docker:v1` if you want to run the app directly from the image from the docker repository.
 
 ## Useful Docker commands
-Here is a list of the basic Docker commands from this page, and some related ones if you’d like to explore a bit before moving on.
+Here is a list of useful Docker commands:
+
+### Docker basics
 
 - `docker build -t <container id|name> .`  # Create image using the current directory's Dockerfile
 - `docker run -p 4000:80 <container id|name>`  # Run the container with the given name or ID with mapping port 4000 to 80
@@ -53,7 +55,16 @@ Here is a list of the basic Docker commands from this page, and some related one
 - `docker rmi <image>`	# Remove image with name
 - `docker container logs -f <container id|name>` # View the logs of the given container
 
-
+### Docker services
+- `docker stack ls` # List stacks or apps
+- `docker swarm init` # Initialze docker swarm
+- `docker stack deploy -c <composefile> <appname>`  # Run the specified Compose file
+- `docker service ls` # List running services associated with an app
+- `docker service ps <service>` # List tasks associated with an app
+- `docker inspect <task or container>`  # Inspect task or container
+- `docker container ls -q`  # List container IDs
+- `docker stack rm <appname>` # Tear down an application
+- `docker swarm leave --force`  # Take down a single node swarm from the manager
 
 
 
